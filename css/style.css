@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(169, 169, 169, 0.421);
+}
+.calender{
+    width: 600px;
+    
+    background-color: white;
+    margin: auto;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.2);
+}
+.month{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 255, 170);
+    color: rgb(0, 0, 0);
+    padding: 40px 30px;
+}
+
+.week{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 234, 144);
+    color: rgb(0, 0, 0);
+    padding: 7px 0;
+}
+
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 300;
+    padding: 10px 0;
+}
+.days div{
+        
+        margin-bottom: 10px;
+        padding: 10px 0;
+        transition: all 0.4s;
+}
+
+.week div,.days div{
+    width: 14.28%;      /*to divide 100% of width equale for 7 days */
+    text-align: center;
+}
+
+.days div:hover{
+    background-color: rgb(241, 241, 241);
+}
+.today{
+    background-color: rgb(0, 252, 92);
+}
+
+.prev_date{
+    color: rgb(195, 194, 194);
+}
+
+#month{
+    font-size: 30px;
+}
+
+.prev,.next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+.prev:hover,
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
